@@ -1,0 +1,11 @@
+CREATE DATABASE [NewWorldsCompagny];
+
+USE [NewWorldsCompagny];
+GO
+
+CREATE TABLE UserAccounts (
+    UserID INTEGER PRIMARY KEY IDENTITY(1,1),
+	Mail VARCHAR (64) UNIQUE NOT NULL,
+    [Login] VARCHAR(50) UNIQUE NOT NULL,
+    [Password] VARCHAR(32) NOT NULL	
+)
